@@ -1,14 +1,10 @@
-working = float(input("Enter yourt height in cm:"))
-absent = float(input("enter your weight in kg:"))
+attendance = float(input("Enter attendance percentage: "))
+internal_score = float(input("Enter internal score: "))
 
-BMI = absent * (working/100)**2
-
-print("your BMI is", BMI)
-
-if BMI > 75:
-    print("you will not be able to sit in the chair for exam")
-elif BMI == 75:
-    print("you will  be able to sit for the exam")
+if attendance >= 75 and internal_score >= 40:
+    print(" good Eligible for exam")
 else:
-    print("nice, you can sit for your exam ")
-    print("exam time !!! The End")
+    if attendance < 75:
+        print(" bad Attendance below 75%")
+    if internal_score < 40:
+        print("Internal score below 40")
