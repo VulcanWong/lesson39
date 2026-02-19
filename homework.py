@@ -1,17 +1,13 @@
-height = float(input("Enter yourt height in cm:"))
-weight = float(input("enter your weight in kg:"))
+working = float(input("Enter yourt height in cm:"))
+absent = float(input("enter your weight in kg:"))
 
-BMI = weight / (height/100)**2
+BMI = absent / (working/100)**2
 
 print("your BMI is", BMI)
 
-if BMI  <= 18.4:
-    print("you are too thin")
-elif BMI <= 24.9:
-    print("nice jobe you are healthy")
-elif BMI <= 29.9:
-    print("you are so fat")
-elif BMI <= 34.9:
-    print("OMG you are obese")
+if BMI  < 75:
+    print("you will not be able to sit in the chair for exam")
+elif BMI == 75:
+    print("you will  be able to sit for the exam")
 else:
-    print(" bruh you are too fat so obese")
+    print("nice, you can sit for your exam")
